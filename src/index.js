@@ -1,5 +1,5 @@
 class SmartCalculator {
-	constructor(initialValue) {
+  constructor(initialValue) {
     this.value = "" + initialValue;
     this.values = this.value;
     this.toString = function() {
@@ -26,10 +26,10 @@ class SmartCalculator {
     this.value = this.value + ' / ' + number;
     return this;
   }
-	pow(number){
+  pow(number){
     this.values = number;  
     this.value = this.value + ' ** ' + number;
-		return this;
-	} 	
+    return this;
+  } 	
 }
 module.exports = SmartCalculator;
